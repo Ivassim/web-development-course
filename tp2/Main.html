@@ -12,47 +12,84 @@
        <nav>
 
               <ul id="nav-menu">
-                <li><a href="sub1.html">Past</a></li>
-                <li><a href="Main.html">History</a></li>
-                <li><a href="sub2.html">Present</a></li>
+                <li><a href="sub1.html" data-i18n="nav_past">Past</a></li>
+                <li><a href="Main.html" data-i18n="nav_history">History</a></li>
+                <li><a href="sub2.html" data-i18n="nav_present">Present</a></li>
               </ul>
+              <div>
+              <select name="theme" id="theme-select">
+                <option value="light">☀️</option>
+                <option value="dark">🌑</option>
+              </select>
               <select name="language" id="language-select">
                   <option value="en">English</option>
                   <option value="fr">Français</option>
               </select>
+            </div>
        </nav>
        
        <main>
-        
-       <h1>Seven Wonders of the World</h1>
-         <h2>Ancient Wonders</h2>
-          <p> The ancient wonders were extraordinary creations of human ingenuity and artistic skill.<br> 
+         <img src="/tp2/image/bannier.jpg" alt="banniere" width="900" height="150">
+       <h1 data-i18n="main_title">Seven Wonders of the World</h1>
+         <h2 data-i18n="ancient_title">Ancient Wonders</h2>
+          <p data-i18n-html="ancient_desc"> The ancient wonders were extraordinary creations of human ingenuity and artistic skill.<br> 
         They represented the pinnacle of architecture, engineering,
          and culture in their time.<br>
         These structures inspired awe and admiration, leaving a legacy that continues to capture 
         our imagination even thousands of years later.</p>
-          <img src="/tp2/image/AncienWonder.jpg" alt="Ancient Wonders Image">
-         <h2>Present Wonders</h2>
-           <p>  The modern wonders celebrate human creativity and cultural achievement across the globe.<br> 
+          <section class="image-slider" id="image-slider-ancient">
+          <div class="slider"></div>
+          <button class="prev" data-i18n="slider_prev">Previous</button>
+          <button class="next" data-i18n="slider_next">Next</button>
+          </section>
+         <h2 data-i18n="present_title">Present Wonders</h2>
+           <p data-i18n-html="present_desc">  The modern wonders celebrate human creativity and cultural achievement across the globe.<br> 
         Selected through international recognition, they symbolize the diversity, history, and 
         craftsmanship of different civilizations.<br> These sites continue to attract millions of visitors 
         every year, reflecting their timeless appeal and importance in our shared heritage.</p>
-           <img src="/tp2/image/NewWonder.jpg" alt="New Wonders Image">
+           
+           <section class="image-slider" id="image-slider-new">
+          <div class="slider"></div>
+          <button class="prev" data-i18n="slider_prev">Previous</button>
+          <button class="next" data-i18n="slider_next">Next</button>
+          </section>
        </main>
 
        <section>
-        <h2>Contact Us</h2>
+        <h2 data-i18n="contact_title">Contact Us</h2>
         <form>
           <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <label for="name" data-i18n="contact_name_label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" data-i18n-placeholder="contact_name_ph">
           </div>
           <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+            <label for="message" data-i18n="contact_message_label">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." data-i18n-placeholder="contact_message_ph"></textarea>
           </div>
-          <button type="submit">Send Message</button>
+          <button type="submit" data-i18n="contact_send">Send Message</button>
         </form>
+       </section>
+
+       <section class="faq" id="faq">
+        <h2 data-i18n="faq_title">FAQ</h2>
+        <div class="faq-item">
+          <button class="faq-question" type="button" data-i18n="faq_q1">What are the Seven Wonders of the World?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a1">The Seven Wonders are remarkable human-made monuments, celebrated for their history and cultural value.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" data-i18n="faq_q2">Are the ancient wonders still standing?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a2">Only the Great Pyramid of Giza still exists today; the others are known from historical records.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" data-i18n="faq_q3">How were the new wonders chosen?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a3">The new wonders were selected by a global vote organized by the New7Wonders Foundation.</p>
+          </div>
+        </div>
        </section>
 
        <footer>
@@ -61,7 +98,7 @@
        </footer>
 
       
-      <script src="main.js"></script>
+      <script src="js/main.js"></script>
        
     </body>
 

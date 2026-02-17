@@ -9,56 +9,62 @@
 <body>
     <nav>
         <ul id="nav-menu">
-            <li><a href="sub1.html">Past</a></li>
-            <li><a href="Main.html">History</a></li>
-            <li><a href="sub2.html">Present</a></li>
+            <li><a href="sub1.html" data-i18n="nav_past">Past</a></li>
+            <li><a href="Main.html" data-i18n="nav_history">History</a></li>
+            <li><a href="sub2.html" data-i18n="nav_present">Present</a></li>
         </ul>
+        <div>
+        <select name="theme" id="theme-select">
+            <option value="light">☀️</option>
+            <option value="dark">🌑</option>
+        </select>
         <select name="language" id="language-select">
             <option value="en">English</option>
             <option value="fr">Français</option>
         </select>
+        </div>
     </nav>
 
     <main>
         <img src="/tp2/image/bannier.jpg" alt="banniere" width="900" height="150">
-        <h1>Ancient Wonders</h1>
+        <h1 data-i18n="sub1_title">Ancient Wonders</h1>
 
         
-        <h2>Great Pyramid of Giza</h2>
-        <p>Built around 2560 BC in Egypt by Pharaoh Khufu, it is the only ancient wonder still standing today.</p>
+        <h2 data-i18n="sub1_giza_title">Great Pyramid of Giza</h2>
+        <p data-i18n="sub1_giza_desc">Built around 2560 BC in Egypt by Pharaoh Khufu, it is the only ancient wonder still standing today.</p>
         <img src="/tp2/image/pyramide.avif" alt="Great Pyramid of Giza" width="600">
 
         
-        <h2>Hanging Gardens of Babylon</h2>
-        <p>Legendary terraced gardens built in Babylon (modern Iraq) by King Nebuchadnezzar II around 600 BC, though their existence is debated.</p>
+        <h2 data-i18n="sub1_babylon_title">Hanging Gardens of Babylon</h2>
+        <p data-i18n="sub1_babylon_desc">Legendary terraced gardens built in Babylon (modern Iraq) by King Nebuchadnezzar II around 600 BC, though their existence is debated.</p>
         <img src="/tp2/image/les_jardins_de_babylone.jpg" alt="Hanging Gardens of Babylon" width="600">
 
         
-        <h2>Statue of Zeus at Olympia</h2>
-        <p>A giant gold and ivory statue of Zeus, created by sculptor Phidias around 435 BC in Greece.</p>
+        <h2 data-i18n="sub1_zeus_title">Statue of Zeus at Olympia</h2>
+        <p data-i18n="sub1_zeus_desc">A giant gold and ivory statue of Zeus, created by sculptor Phidias around 435 BC in Greece.</p>
         <img src="/tp2/image/zeus_stat.webp" alt="Statue of Zeus at Olympia" width="600">
 
         
-        <h2>Temple of Artemis at Ephesus</h2>
-        <p>Located in Turkey, built around 550 BC, dedicated to the goddess Artemis. It was rebuilt several times before its destruction.</p>
+        <h2 data-i18n="sub1_artemis_title">Temple of Artemis at Ephesus</h2>
+        <p data-i18n="sub1_artemis_desc">Located in Turkey, built around 550 BC, dedicated to the goddess Artemis. It was rebuilt several times before its destruction.</p>
         <img src="/tp2/image/ArtemisTemple.webp" alt="Temple of Artemis" width="600">
 
         
-        <h2>Mausoleum at Halicarnassus</h2>
-        <p>Built in Turkey around 350 BC for Mausolus, a Persian satrap, it was famous for its grandeur and sculptures.</p>
+        <h2 data-i18n="sub1_mausoleum_title">Mausoleum at Halicarnassus</h2>
+        <p data-i18n="sub1_mausoleum_desc">Built in Turkey around 350 BC for Mausolus, a Persian satrap, it was famous for its grandeur and sculptures.</p>
         <img src="/tp2/image/Artist-re-creation-Mausoleum-of-Halicarnassus.webp" alt="Mausoleum at Halicarnassus" width="600">
 
         
-        <h2>Colossus of Rhodes</h2>
-        <p>A giant bronze statue of the sun god Helios, built around 280 BC in Greece, standing over 30 meters tall.</p>
+        <h2 data-i18n="sub1_colossus_title">Colossus of Rhodes</h2>
+        <p data-i18n="sub1_colossus_desc">A giant bronze statue of the sun god Helios, built around 280 BC in Greece, standing over 30 meters tall.</p>
         <img src="/tp2/image/1452202029-colossus-of-rhodes-project.avif" alt="Colossus of Rhodes" width="600">
 
         
-        <h2>Lighthouse of Alexandria</h2>
-        <p>Constructed on the island of Pharos, Egypt, around 280 BC to guide sailors safely into the harbor of Alexandria.</p>
+        <h2 data-i18n="sub1_lighthouse_title">Lighthouse of Alexandria</h2>
+        <p data-i18n="sub1_lighthouse_desc">Constructed on the island of Pharos, Egypt, around 280 BC to guide sailors safely into the harbor of Alexandria.</p>
         <img src="/tp2/image/reconstruction_of_alexandria_50BCE_5.jpg" alt="Lighthouse of Alexandria" width="600">
 
-        <h2>For more Information:</h2>
+        <h2 data-i18n="sub1_more_info">For more Information:</h2>
         <ul>
             <li><a href="https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza">Great Pyramid of Giza - Wikipedia</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Hanging_Gardens_of_Babylon">Hanging Gardens of Babylon - Wikipedia</a></li>
@@ -76,5 +82,6 @@
     </footer>
 
    
+    <script src="js/main.js"></script>
 </body>
 </html>
